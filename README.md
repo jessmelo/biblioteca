@@ -7,5 +7,3 @@ Banco de Dados para uma biblioteca! Inserção de novas publicações, excluir e
 Foi utilizado o SGBD PostGres para criação do banco de dados relacional. 
 
 Aluna: Jéssica da Paixão
-
-(Incompleto)
