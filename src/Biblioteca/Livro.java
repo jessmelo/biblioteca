@@ -2,55 +2,60 @@ package Biblioteca;
 
 public class Livro {
     private String titulo;
-    private String titulo_original;
-    private String tipo_livro;
-    private int numpaginas;
-    private int numedicao;
-    private String editora;
-    private int ano_publicacao;
-    
-    public String getTitulo() {
-        return this.titulo;
-    }
-    public void setTitulo(String novo) {
-        this.titulo = novo;
-    }
-    public String getTituloOriginal() {
-        return this.titulo_original;
-    }
-    public void setTituloOriginal(String novo) {
-        this.titulo_original = novo;
-    }
-    public String getTipoLivro() {
-        return this.tipo_livro;
-    }
-    public void setTipoLivro(String novo) {
-        this.tipo_livro = novo;
-    }
-    public int getNumPaginas() {
-        return this.numpaginas;
-    }
-    public void setNumPaginas(int novo) {
-        this.numpaginas = novo;
-    }
-    public int getNumEdicao() {
-        return this.numedicao;
-    }
-    public void setNumEdicao(int novo) {
-        this.numedicao = novo;
-    }
-    public String getEditora() {
-        return this.editora;
-    }
-    public void setEditora(String novo) {
-        this.editora = novo;
-    }
-    public int getAnoPublicacao() {
-        return this.ano_publicacao;
-    }
-    public void setAnoPublicacao(int novo) {
-        this.ano_publicacao = novo;
-    }
-}	
-
-
+	private int publi_id;
+	private String tipo_livro;
+	private String autor;
+	private int numpaginas;
+	private int numedicao;
+	private String Editora;
+	private int ano_publicacao;
+	
+	public String getTitulo() {
+		return titulo;
+	}
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+	public int getPubli_id() {
+		return publi_id;
+	}
+	public void setPubli_id(int publi_id) {
+		this.publi_id = publi_id;
+	}
+	public String getTipo_livro() {
+		return tipo_livro;
+	}
+	public void setTipo_livro(String tipo_livro) {
+		this.tipo_livro = tipo_livro;
+	}
+	public String getAutor() {
+		return autor;
+	}
+	public void setAutor(String autor) {
+		this.autor = autor;
+	}
+	public int getNumpaginas() {
+		return numpaginas;
+	}
+	public void setNumpaginas(int numpaginas) {
+		this.numpaginas = numpaginas;
+	}
+	public int getNumedicao() {
+		return numedicao;
+	}
+	public void setNumedicao(int numedicao) {
+		this.numedicao = numedicao;
+	}
+	public String getEditora() {
+		return Editora;
+	}
+	public void setEditora(String editora) {
+		Editora = editora;
+	}
+	public int getAno_publicacao() {
+		return ano_publicacao;
+	}
+	public void setAno_publicacao(int ano_publicacao) {
+		this.ano_publicacao = ano_publicacao;
+	}
+}

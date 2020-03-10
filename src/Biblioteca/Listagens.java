@@ -81,7 +81,7 @@ public class Listagens extends JFrame {
 
 
 		JComboBox comboBox = new JComboBox();
-		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Selecione pesquisa", "Listar todas as publica\u00E7\u00F5es por autores", "Listar todas as publica\u00E7\u00F5es em ordem alfab\u00E9tica"}));
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Selecione pesquisa", "Listar todas as publica\u00E7\u00F5es por tema", "Listar todas as publica\u00E7\u00F5es por autores", "Listar todas as publica\u00E7\u00F5es em ordem alfab\u00E9tica", "Listar todos os artigos que constituem anais de confer\u00EAncia", "Listar todos os artigos que constituem peri\u00F3dicos"}));
 		contentPane.add(comboBox, BorderLayout.NORTH);
 		
 		JTextArea txtListas = new JTextArea();
@@ -102,13 +102,25 @@ public class Listagens extends JFrame {
 		       if (event.getStateChange() == ItemEvent.SELECTED) {
 		    	   String selecao = comboBox.getSelectedItem().toString();
 
-		    	   if(selecao == "Listar todas as publica\u00E7\u00F5es por autores") {
+		    	   if(selecao == "Listar todas as publica\u00E7\u00F5es por tema") {
 		    		   Object item = event.getItem();
 		    		   Pesquisas.listarPublicacoesTema();
 		    	   } 
+		    	   else if(selecao == "Listar todas as publica\u00E7\u00F5es por autores") {
+		    		   Object item = event.getItem();
+		    		   Pesquisas.listarAutores();
+		    	   } 
 		    	   else if(selecao == "Listar todas as publica\u00E7\u00F5es em ordem alfab\u00E9tica") {
 		    		   Object item = event.getItem();
-		    			Pesquisas.listarAutores();
+		    		   Pesquisas.listarPublicacoesTitulo();
+		    	   }
+		    	   else if (selecao == "Listar todos os artigos que constituem anais de confer\\u00EAncia"){
+		    		   Object item = event.getItem();
+		    		   Pesquisas.listarArtigosAnais();
+		    		}
+		    	   else if (selecao == "Listar todos os artigos que constituem peri\\\\u00F3dicos") {		   
+		    	   		Object item = event.getItem();
+		    	     	Pesquisas.listarArtigosPeriodicos();
 		    	   }
 		       }
 		    }       

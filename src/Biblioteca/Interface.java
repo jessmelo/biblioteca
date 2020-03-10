@@ -11,6 +11,8 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JLabel;
+import java.awt.Font;
 
 public class Interface extends JFrame {
 
@@ -43,7 +45,7 @@ public class Interface extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JButton btnPesquisar = new JButton("Pesquisar ");
+		JButton btnPesquisar = new JButton("Pesquisar Publica\u00E7\u00F5es");
 		btnPesquisar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				contentPane.setVisible(false);
@@ -56,7 +58,7 @@ public class Interface extends JFrame {
 				
 			}
 		});
-		btnPesquisar.setBounds(90, 185, 248, 23);
+		btnPesquisar.setBounds(90, 118, 248, 23);
 		contentPane.add(btnPesquisar);
 		
 		JButton btnInserirNovaPublicao = new JButton("Inserir Nova Publica\u00E7\u00E3o");
@@ -66,7 +68,12 @@ public class Interface extends JFrame {
 				new Formulario().setVisible(true); 
 			}
 		});
-		btnInserirNovaPublicao.setBounds(90, 46, 248, 23);
+		btnInserirNovaPublicao.setBounds(90, 61, 248, 23);
 		contentPane.add(btnInserirNovaPublicao);
+		
+		JLabel lblBiblioteca = new JLabel("Biblioteca");
+		lblBiblioteca.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		lblBiblioteca.setBounds(170, 24, 180, 15);
+		contentPane.add(lblBiblioteca);
 	}
 }

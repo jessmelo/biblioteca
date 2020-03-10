@@ -7,44 +7,49 @@ public class LivroAnais {
     private String estado;
     private String pais;
     private int volume;
-
-    public String getTitulo() {
-        return this.titulo;
-    }
-    public void setTitulo(String novo) {
-        this.titulo = novo;
-    }
-    public String getEditora() {
-        return this.editora;
-    }
-    public void setEditora(String novo) {
-        this.editora = novo;
-    }
-    public String getCidade() {
-        return this.cidade;
-    }
-    public void setCidade(String novo) {
-        this.cidade = novo;
-    }
-    public String getEstado() {
-        return this.estado;
-    }
-    public void setEstado(String novo) {
-        this.estado = novo;
-    }
-    public String getPais() {
-        return this.pais;
-    }
-    public void setPais(String novo) {
-        this.pais = novo;
-    }
-    public int getVolume() {
-        return this.volume;
-    }
-    public void setVolume(int novo) {
-        this.volume = novo;
-    }
+	private int publi_id;
+	
+	public String getTitulo() {
+		return titulo;
+	}
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+	public String getEditora() {
+		return editora;
+	}
+	public void setEditora(String editora) {
+		this.editora = editora;
+	}
+	public String getCidade() {
+		return cidade;
+	}
+	public void setCidade(String cidade) {
+		this.cidade = cidade;
+	}
+	public String getEstado() {
+		return estado;
+	}
+	public void setEstado(String estado) {
+		this.estado = estado;
+	}
+	public String getPais() {
+		return pais;
+	}
+	public void setPais(String pais) {
+		this.pais = pais;
+	}
+	public int getVolume() {
+		return volume;
+	}
+	public void setVolume(int volume) {
+		this.volume = volume;
+	}
+	public int getPubli_id() {
+		return publi_id;
+	}
+	public void setPubli_id(int publi_id) {
+		this.publi_id = publi_id;
+	}
 
 }
-
-
